@@ -1,0 +1,109 @@
+{
+    "padi": [
+        {
+            "hari": [7,10],
+            "pupuk": ["Urea", "SP-36"],
+            "catatan": "Pemupukan dasar setelah tanam"
+        },
+        {
+            "hari": 25,
+            "pupuk": ["Urea", "KCl"],
+            "catatan": "Pertumbuhan vegetatif"
+        },
+        {
+            "hari": 45,
+            "pupuk": ["Urea", "NPK"],
+            "catatan": "Menjelang fase bunting"
+        },
+        {
+            "hari": 65,
+            "pupuk": ["Urea", "KCl"],
+            "catatan": "Fase pengisian bulir"
+        },
+        {
+            "hari": [90,100],
+            "catatan": "Siap panen"
+        }
+    ],
+    "cabai": [
+        {
+            "hari": 7,
+            "pupuk": ["Pupuk kandang", "SP-36"],
+            "catatan": "Dasar dan akar kuat"
+        },
+        {
+            "hari": 21,
+            "pupuk": ["Urea", "KCl"],
+            "catatan": "Perkembangan daun dan batang"
+        },
+        {
+            "hari": 35,
+            "pupuk": ["NPK", "pupuk mikro (Mg, Zn)"],
+            "catatan": "Masa mulai pembungaan"
+        },
+        {
+            "hari": 65,
+            "pupuk": ["NPK", "Pupuk buah"],
+            "catatan": "Menjaga pembungaan dan buah. Pemupukan rutin setiap 10-14 hari setelah panen pertama"
+        }
+    ],
+    "tomat": [
+        {
+            "hari": 7,
+            "pupuk": ["Pupuk kandang", "SP-36", "Urea"],
+            "catatan": "Dasar pertumbuhan awal"
+        },
+        {
+            "hari": 25,
+            "pupuk": ["NPK", "KCl"],
+            "catatan": "Pertumbuhan tanaman"
+        },
+        {
+            "hari": 40,
+            "pupuk": ["NPK"],
+            "catatan": "Fase pembentukan dan isi buah. Pemupukan rutin setiap 10-14 hari setelah panen pertama"
+        }
+    ],
+    "pakcoy": [
+        {
+            "hari": 7,
+            "pupuk": ["Pupuk kandang", "SP-36"],
+            "catatan": "Dasar nutrisi"
+        },
+        {
+            "hari": 14,
+            "pupuk": ["Urea", "KCl"],
+            "catatan": "Pertumbuhan daun cepat"
+        },
+        {
+            "hari": 21,
+            "pupuk": ["NPK"],
+            "catatan": "Pembentukan biomassa"
+        },
+                {
+            "hari": [30,40],
+            "catatan": "Siap panen"
+        }
+    ],
+        "kangkung": [
+        {
+            "hari": 5,
+            "pupuk": ["Pupuk kandang"],
+            "catatan": "Dasar pertumbuhan"
+        },
+        {
+            "hari": 12,
+            "pupuk": ["Urea", "NPK"],
+            "catatan": "Pertumbuhan cepat"
+        },
+        {
+            "hari": 18,
+            "pupuk": ["NPK", "Kompos cair (POC)"],
+            "catatan": "Memperbesar daun dan batang"
+        },
+        {
+            "hari": [21,30],
+            "catatan": "Siap panen"
+        }
+    ]
+}

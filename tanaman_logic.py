@@ -3,12 +3,12 @@ import os
 from datetime import datetime, timedelta
 from plyer import notification
 
-
 # load json
-BASE_DIR = "e:/project/teman_petani"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_jadwal(filename="data_tanaman.json"):
-    with open(os.path.join(BASE_DIR, filename), "r", encoding="utf-8") as f:
+    filepath = os.path.join(BASE_DIR, filename)
+    with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def hitung_jadwal_pemupukan(tanaman: str, tanggal_tanam: str):
@@ -36,7 +36,7 @@ def hitung_jadwal_pemupukan(tanaman: str, tanggal_tanam: str):
                     "pupuk": fase.get("pupuk", []),
                     "catatan": fase.get("catatan", "")
                 })
-            elif isinstance(hari, list) and len(hari) == 2:
+            elif isinstance(hari, list) and len(hari) == 2 and tanaman in ["cabai", "tomat"]:
                 for h in range(hari[0], hari[1] + 1, 14):
                     tgl_pupuk = tanggal_awal + timedelta(days=h)
                     hasil.append({
@@ -44,7 +44,14 @@ def hitung_jadwal_pemupukan(tanaman: str, tanggal_tanam: str):
                         "pupuk": fase.get("pupuk", []),
                         "catatan": fase.get("catatan", "") + f" (Hari ke-{h})"
                     })
-
+            elif isinstance(hari,list) and len(hari) == 2 and tanaman == "padi":
+                h = hari[0]
+                tgl_pupuk = tanggal_awal + timedelta(days=h)
+                hasil.append({
+                        "tanggal": tgl_pupuk.strftime("%d-%m-%Y"),
+                        "pupuk": fase.get("pupuk", []),
+                        "catatan": fase.get("catatan", "") + f" (Hari ke-{h})"
+                    })
         return hasil
 
     except ValueError:

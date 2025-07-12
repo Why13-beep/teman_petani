@@ -85,7 +85,7 @@
             "catatan": "Siap panen"
         }
     ],
-        "kangkung": [
+    "kangkung": [
         {
             "hari": 5,
             "pupuk": ["Pupuk kandang"],
@@ -103,6 +103,27 @@
         },
         {
             "hari": [21,30],
+            "catatan": "Siap panen"
+        }
+    ],
+    "selada": [
+        {
+            "hari": 0,
+            "pupuk": ["Pupuk kandang", "SP-36"],
+            "catatan": "Pemupukan dasar sebelum tanam"
+        },
+        {
+            "hari": 7,
+            "pupuk": ["Urea", "KCl"],
+            "catatan": "Pemupukan awal setelah tanam"
+        },
+        {
+            "hari": 20,
+            "pupuk": ["Urea"],
+            "catatan": "Pemupukan akhir menjelang panen"
+        },
+        {
+            "hari": [25,30],
             "catatan": "Siap panen"
         }
     ]

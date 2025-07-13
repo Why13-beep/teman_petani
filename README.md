@@ -38,7 +38,7 @@ No contribution is too small!
 
 - Python 3.10+
 - Flask (or FastAPI planned)
-- SQLite / JSON-based prototype
+- SQL / JSON-based prototype
 - [Matplotlib](https://matplotlib.org/) + CustomTkinter (for prototype GUI)
 - Android frontend to be built (open to framework proposals)
 

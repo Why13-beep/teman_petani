@@ -12,7 +12,6 @@ This project began with a simple goal:
 Imagine a lightweight Android app that:
 - Sends timely notifications for fertilizing and crop care
 - Supports multiple plant types (e.g., rice, chili, lettuce, pakcoy)
-- Works **offline**
 - Is **free and open source**
 - Has **minimal ads** (just enough for a cup of coffee ☕)
 

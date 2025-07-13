@@ -31,5 +31,4 @@ def get_statistik():
     except:
         return jsonify({"error": "Gagal mengambil statistik"}), 400
     
-if __name__ == "__main__":
-    app.run()
+app.run(host="0.0.0.0", port=81)

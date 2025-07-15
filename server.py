@@ -30,5 +30,21 @@ def get_statistik():
 
     except:
         return jsonify({"error": "Gagal mengambil statistik"}), 400
+
+#still need to update json
+@app.route('/hitung_pupuk', methods=['POST'])
+def hitung():
+    data = request.json
+    luas = float(data['luas_m2'])
+    dosis = float(data['dosis_kg_per_m2'])
+    harga = float(data['harga_per_kg'])
+
+    kebutuhan = hitung_kebutuhan_pupuk(luas, dosis)
+    biaya = hitung_total_harga_pupuk(kebutuhan, harga)
+
+    return jsonify({
+        "kebutuhan_kg": round(kebutuhan, 2),
+        "total_harga": round(biaya)
+    })
     
 app.run(host="0.0.0.0", port=81)

@@ -39,4 +39,6 @@ def get_statistik_mingguan():
     for tgl, tanaman, akt, det in data:
         ringkasan += f"{tgl} | {tanaman} | {akt} -> {det}\n"
 
+    # need extra statictic for fertilizer need & cost
+
     return ringkasan

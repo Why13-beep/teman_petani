@@ -106,6 +106,13 @@ def input_pengguna():
             print(f"  Catatan: {fase['catatan']}")
             print()
 
+#still need update json
+def hitung_kebutuhan_pupuk(luas_m2: float, dosis_kg_per_m2: float) -> float:
+    return luas_m2 * dosis_kg_per_m2
+
+def hitung_total_harga_pupuk(kebutuhan_kg: float, harga_per_kg: float) -> float:
+    return kebutuhan_kg * harga_per_kg
+
 # uji
 if __name__ == "__main__":
     input_pengguna()
